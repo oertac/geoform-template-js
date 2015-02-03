@@ -3,16 +3,25 @@ define({
     //default web map, default app color theme and more. These values can be overwritten by template configuration settings
     //and url parameters.
     "appid": "",
-    "webmap": "0c5cb13c4fc54b28bb26a125221ed96f",
+    "webmap": "17e8c2a519ff43598672bfc90efe80b2",
     "form_layer": {
-        "id": ""
+        "id": "Kommentar"
     },
     "details": {
-        "Title": "",
-        "Logo": "",
-        "Description": ""
+        "Title": "My Test GeoForm",
+        "Logo": "http://koeln.rohrreinigung-abs.de/wp-content/uploads/2014/03/Logo_StadtKoeln.jpg",
+        "Description": "Check out my GeoForm!"
     },
-    "fields": [],
+    //"fields": [],
+	"fields": [{
+    "name": "Email", // field ID
+    "alias": "Email", // label
+    "fieldDescription": "Let us contact you.", // help text
+    "visible": true, // show this field?
+    "typeField": false, // subtype field?
+    "tooltip": "test@test.com", // placeholder text
+    "displayType": "email" // text, checkbox, radio, textarea, url, email
+	}],
     "theme": "bootstrap", // see values in themes.js
     "oauthappid": null,
     //Enter the url to the proxy if needed by the applcation. See the "Using the proxy page" help topic for details
@@ -24,7 +33,7 @@ define({
     //Enter the url to your organizations bing maps key if you want to use bing basemaps
     "bingmapskey": "",
     //Defaults to arcgis.com. Set this value to your portal or organization host name.
-    "sharinghost": location.protocol + "//" + "www.arcgis.com",
+    "sharinghost": "http://esri-de-6.maps.arcgis.com",
     "units": null,
     "useSmallHeader": false,
     "enableSharing": true,
@@ -57,6 +66,6 @@ define({
             "url": null
         }]
     },
-    "bitlyLogin": "esri",
-    "bitlyKey": "R_65fd9891cd882e2a96b99d4bda1be00e"
+    "bitlyLogin": "oertac",
+    "bitlyKey": "R_3b7a237f2e8549659467deba7a99636e"
 });
